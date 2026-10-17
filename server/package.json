@@ -1,0 +1,20 @@
+{
+  "name": "shm-telemetry-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HTTP + WebSocket control/telemetry server for the SHM telemetry bridge",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server/src/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "ws": "8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.6",
+    "@types/ws": "8.5.13",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3"
+  }
+}
